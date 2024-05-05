@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kronny Website Coming Soon</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 100px;
+  }
+
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+
+  .music-notes {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: musicAnimation linear infinite;
+  }
+
+  @keyframes musicAnimation {
+    0% {
+      transform: translateY(0) rotate(0) scale(1);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg) scale(0.5);
+    }
+  }
+</style>
+</head>
+<body>
+<div class="background">
+  <!-- Music Notes -->
+  <div class="music-notes" style="top: 10%; left: 10%; animation-duration: 5s;"></div>
+  <div class="music-notes" style="top: 20%; left: 20%; animation-duration: 4s;"></div>
+  <div class="music-notes" style="top: 30%; left: 30%; animation-duration: 3s;"></div>
+  <div class="music-notes" style="top: 40%; left: 40%; animation-duration: 6s;"></div>
+  <div class="music-notes" style="top: 50%; left: 50%; animation-duration: 3.5s;"></div>
+  <div class="music-notes" style="top: 60%; left: 60%; animation-duration: 4.5s;"></div>
+  <div class="music-notes" style="top: 70%; left: 70%; animation-duration: 5.5s;"></div>
+  <div class="music-notes" style="top: 80%; left: 80%; animation-duration: 4s;"></div>
+  <div class="music-notes" style="top: 90%; left: 90%; animation-duration: 5s;"></div>
+  <!-- Add more music notes as needed -->
+</div>
+<h1>Kronny Website Coming Soon</h1>
+</body>
+</html>
