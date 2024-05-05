@@ -18,7 +18,11 @@
   h1 {
     font-size: 2.5em;
     font-weight: bold;
-    margin-top: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
   .background {
@@ -49,9 +53,16 @@
       transform: translateY(100vh) rotate(360deg) scale(0.5);
     }
   }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  }
 </style>
 </head>
 <body>
+<h1>Kronny Website Coming Soon</h1>
 <div class="background">
   <!-- Music Notes -->
   <div class="music-notes" style="top: 10%; left: 10%; animation-duration: 5s;"></div>
@@ -63,8 +74,10 @@
   <div class="music-notes" style="top: 70%; left: 70%; animation-duration: 5.5s;"></div>
   <div class="music-notes" style="top: 80%; left: 80%; animation-duration: 4s;"></div>
   <div class="music-notes" style="top: 90%; left: 90%; animation-duration: 5s;"></div>
+  <div class="music-notes" style="top: 15%; left: 80%; animation-duration: 6s;"></div>
+  <div class="music-notes" style="top: 70%; left: 30%; animation-duration: 3.5s;"></div>
+  <div class="music-notes" style="top: 35%; left: 55%; animation-duration: 4.5s;"></div>
   <!-- Add more music notes as needed -->
 </div>
-<h1>Kronny Website Coming Soon</h1>
 </body>
 </html>
